@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="auto-registry pale-text">
+        <p class="auto-registr__text">Уже есть аккаунт на Яндексе? <a class="help__link" href="#">Войти</a></p>
+    </div>
+
+    <div class="wrapper">
+        <main class="info">
+            <div class="yandex-id">
+                <img class="info__logo" src="./assets/logo.svg" alt="Логотип">
+                <h1 class="info__header header">Яндекс ID — один аккаунт для всего</h1>
+                <div class="icons">
+                    <img class="info__pic" src="./assets/mail.svg" alt="Почта">
+                    <img class="info__pic" src="./assets/disk.svg" alt="Диск">
+                    <img class="info__pic" src="./assets/market.svg" alt="Маркет">
+                    <img class="info__pic" src="./assets/music.svg" alt="Музыка">
+                </div>
+                <p class="info__description pale-text">Ищите, пишите письма, сохраняйте и делитесь файлами, выбирайте товары, слушайте музыку и прокладывайте маршруты с одним аккаунтом на всех устройствах и платформах.</p>
+                <ul class="help">
+                    <li><a class="help__link" href="#">Ru</a></li>
+                    <li><a class="help__link" href="#">Справка</a></li>
+                    <li><a class="help__link" href="#">Обратная связь</a></li>
+                    <li>© 2001-2022,<a class="help__link_copyright help__link" href="#">Яндекс</a></li>
+                </ul>
+            </div>
+        </main>
+
+        <aside class="aside">
+            <div class="wrapper-registry">
+                <h2 class="aside__header header">Регистрация</h2>
+                <form class="registry-form" action="#" id="registryForm" novalidate>
+                    <input class="registry-form__input" type="text" id="name" placeholder="Имя" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required>
+                    <input class="registry-form__input" type="text" id="lastName" placeholder="Фамилия" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required>
+                    <input class="registry-form__input" type="text" id="login" placeholder="Придумайте логин" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required>
+                    <input class="registry-form__input" type="password" name="password" id="password" placeholder="Придумайте пароль" pattern="^(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"required>
+                    <input class="registry-form__input" type="password" name="passwordRepeat" id="passwordRepeat" placeholder="Повторите пароль"   required>
+                    <input class="registry-form__input" type="tel" name="number" id="phonenumber" placeholder="Номер мобильного телефона" pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$" required>
+                    <input class="registry-form__btn" type="button" id="submit" value="Зарегистрироваться">
+                    <div class="terms">
+                        <p class="registry-form__check pale-text">Нажимая кнопку «Зарегистрироваться»:</p>
+                        <label class="terms__desc" for="terms">
+                            <input class="registry-form__checkbox_terms" type="checkbox" id="terms" checked>Я принимаю условия Пользовательского соглашения и даю своё согласие Яндексу на обработку моей персональной информации на условиях, определенных Политикой конфиденциальности.
+                        </label>
+                        <label for="adds">
+                            <input class="registry-form__checkbox_promo" type="checkbox" id="adds">Я не хочу получать рекламу и другие предложения данного сервиса Яндекса
+                        </label>
+                    </div>
+                </form>
+
+                <div id="err"></div>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <script src="./scripts.js">
+    </script>
+</body>
+
+
+</html>

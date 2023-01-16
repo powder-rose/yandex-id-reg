@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap");
+
+body {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.header {
+  margin-bottom: 2rem;
+  font-weight: lighter;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+}
+
+.pale-text {
+  color: #757575;
+  font-size: 16px;
+}
+
+.auto-registry {
+  display: flex;
+  justify-content: end;
+  height: 20px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info {
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+}
+
+.info__header {
+  font-size: 28px;
+}
+
+.yandex-id {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 4rem;
+  margin-top: 6rem;
+  text-align: center;
+
+  width: 80%;
+}
+
+.info__pic {
+  width: 2.8rem;
+  margin: 25px 25px 5rem;
+}
+
+.info__logo {
+  height: 4rem;
+  width: 4rem;
+}
+
+.aside {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  padding: 3%;
+}
+
+.wrapper-registry {
+  box-shadow: 1px 1px 62px -19px rgba(0, 0, 0, 0.25);
+  width: 320px;
+  padding: 6%;
+}
+
+.registry-form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.registry-form__btn {
+  width: 300px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffcc00;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.registry-form__input {
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 1px solid rgb(193, 193, 193);
+  width: 300px;
+  font-size: 16px;
+  color: #929292;
+  padding-bottom: 1rem;
+}
+
+.registry-form__check {
+  font-size: 14px;
+}
+
+.terms {
+  display: flex;
+  flex-flow: column;
+  width: 300px;
+  text-align: start;
+  text-indent: 0px;
+}
+
+.terms__desc {
+  margin-bottom: 20px;
+}
+
+.help {
+  margin-top: 25rem;
+  list-style-type: none;
+  display: flex;
+  color: #757575;
+  font-size: 13px;
+}
+
+.help__link {
+  text-decoration: none;
+  margin: 10px;
+  font-size: 13px;
+  color: rgb(0, 0, 178);
+}
+
+.auto-registr__text {
+  font-size: 13px;
+}
+
+
+.user-login {
+  border-bottom: 1px solid rgb(193, 193, 193);
+}
+
