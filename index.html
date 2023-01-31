@@ -39,14 +39,21 @@
         <aside class="aside">
             <div class="wrapper-registry">
                 <h2 class="aside__header header">Регистрация</h2>
+
                 <form class="registry-form" action="#" id="registryForm" novalidate>
-                    <input class="registry-form__input" type="text" id="name" placeholder="Имя" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required>
-                    <input class="registry-form__input" type="text" id="lastName" placeholder="Фамилия" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required>
-                    <input class="registry-form__input" type="text" id="login" placeholder="Придумайте логин" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required>
-                    <input class="registry-form__input" type="password" name="password" id="password" placeholder="Придумайте пароль" pattern="^(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"required>
-                    <input class="registry-form__input" type="password" name="passwordRepeat" id="passwordRepeat" placeholder="Повторите пароль"   required>
-                    <input class="registry-form__input" type="tel" name="number" id="phonenumber" placeholder="Номер мобильного телефона" pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$" required>
-                    <input class="registry-form__btn" type="button" id="submit" value="Зарегистрироваться">
+                    <input class="registry-form__input" type="text" id="username" placeholder="Имя" required>
+                    <div class="errorName err"></div>
+                    <input class="registry-form__input" type="text" id="surname" placeholder="Фамилия" required>
+                    <div class="errorSurname err"></div>
+                    <input class="registry-form__input" type="text" id="login" placeholder="Придумайте логин" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required >
+                    <div class="errorLogin err"></div>
+                    <input class="registry-form__input" type="password" name="password" id="password" placeholder="Придумайте пароль" pattern="[A-Za-z0-9]{8,}" minlength="8" required>
+                    <div class="passwordError err"></div>
+                    <input class="registry-form__input" type="password" name="passwordRepeat" minlength="8" id="passwordRepeat" placeholder="Повторите пароль" required  >
+                    <div class="passwordRepeatError err"></div>
+                    <input class="registry-form__input" type="tel" name="number" id="telNumber" placeholder="Номер мобильного телефона" pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$" minlength="10" required>
+                    <div class="telError err"></div>
+                    <input class ="registry-form__btn" type="button" id="submit" value="Зарегистрироваться">
                     <div class="terms">
                         <p class="registry-form__check pale-text">Нажимая кнопку «Зарегистрироваться»:</p>
                         <label class="terms__desc" for="terms">
@@ -57,16 +64,14 @@
                         </label>
                     </div>
                 </form>
-
-                <div id="err"></div>
             </div>
 
         </aside>
 
     </div>
 
-    <script src="./scripts.js">
-    </script>
+    
+    <script src="./scripts.js"></script>
 </body>
 
 
